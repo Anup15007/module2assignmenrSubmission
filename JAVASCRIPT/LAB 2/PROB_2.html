@@ -1,0 +1,54 @@
+<html>
+	<head>
+
+	</head>
+	<body><h1>
+		<p>--------------------------------------------------------<p>
+		******Calculate Compound Interest******
+		<p>--------------------------------------------------------<p></h1>
+		<table style="font-size:25px;">
+			<tr>
+				<td>Principal</td>
+				<td>-</td>
+				<td>	
+					<script>
+						var p=1000;
+						document.write(p);
+					</script>
+				</td>
+			</tr>
+				<tr>
+				<td>Rate of Interest</td>
+				<td>-</td>
+				<td>	
+					<script>
+						var rate=10;
+						document.write(rate+"%");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td>Period</td>
+				<td>-</td>
+				<td>	
+					<script>
+						var t=1;
+						document.write(t+" yr");
+					</script>
+				</td>
+			</tr>
+			<tr>
+				<td>Comp Interest</td>
+				<td>-</td>
+				<td>	
+					<script>
+						//var CI=1;
+						var poww=Math.pow((1+(rate/100)),t);
+						var CI=(p*poww)-p;
+						document.write(CI+" yr");
+					</script>
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,87 @@
+<html>
+<head>
+<title> Products_Description </title>
+</head>
+<style>
+
+ th, td{
+	align: center;
+ }
+ 
+ body {
+	background-color:cyan;
+	}
+
+</style>
+<script>
+var myWindow;
+function orderProduct()
+{
+	if(document.products.BarbieDoll.value==""&&document.products.Calculator.value==""&&document.getElementById("MobilePhone").value==""&&document.getElementById("LGDVD").value==""){
+		window.alert("no item selected");
+	}
+	else{
+		myWindow=open('','mywin','height=300,width=600,left=200, top=550','false');
+		myWindow.document.writeln("<h1 align=\"center\">INVOICE</h1>");
+		myWindow.document.writeln("<table align=\"center\" border=\"1\"><tr><th>PRODUCT</th><th>QUANTITY</th><th>PRICE</th><th>TOTAL</th>");
+		if (document.products.BarbieDoll.value!=""){
+			myWindow.document.writeln("<tr><td>Barbie Doll</td><td>"+parseInt(document.products.BarbieDoll.value)+ "</td><td>20</td><td>" + 20 * parseInt(document.products.BarbieDoll.value)+"</th>");
+		}
+		if (document.products.Calculator.value!=""){
+			myWindow.document.writeln("<tr><td>Calculator</td><td>"+parseInt(document.products.Calculator.value)+"</td><td>30</td><td>" + 30 * parseInt(document.products.Calculator.value)+"</th>");
+		}
+		if (document.products.MobilePhone.value!=""){
+			myWindow.document.writeln("<tr><td>Mobile Phone</td><td>"+parseInt(document.products.MobilePhone.value)+"</td><td>40</td><td>" + 40 * parseInt(document.products.MobilePhone.value)+"</th>");
+		}
+		if (document.products.LGDVD.value!=""){
+			myWindow.document.writeln("<tr><td>LG DVD</td><td>"+parseInt(document.products.LGDVD.value)+"</td><td>50</td><td>" + 50 * parseInt(document.products.LGDVD.value)+"</th>");
+		}		
+	}
+}
+</script>
+<body>
+
+<h1><b>PRODUCTS</b></h1>
+<form name="products" id="products">
+	<table border="1" cellspacing="8" cellpadding="10" bordercolor="blue">
+		<tr>
+			<th> Name </th>
+			<th> Description </th>
+			<th> Price </th>
+			<th> Qty </th>
+		</tr>
+		
+		<tr>
+			<td> Barbie Doll </td>
+			<td> Beautiful </td>
+			<td> 20 </td>
+			<td><input type="number" name="BarbieDoll" id="BarbieDoll"/></td>
+		</tr>
+		
+		<tr>
+			<td> Calculator </td>
+			<td> Calculator with latest features</td>
+			<td> 30 </td>
+			<td> <input type="number" name="Calculator" id="calculator"/> </td>
+		</tr>
+		
+		<tr>
+			<td> Mobile Phone </td>
+			<td> Camera,Java Games,Games </td>
+			<td> 40 </td>
+			<td> <input type="number" name="MobilePhone" id="MobilePhone"/> </td>
+		</tr>
+		
+		<tr>
+			<td> LG DVD </td>
+			<td> 5 disc changer</td>
+			<td> 50 </td>
+			<td> <input type="number" name="LGDVD" id="LGDVD"/> </td>
+		</tr>
+
+</table>
+		<tr><td><input type="submit" name="order" value="ORDER" id="order" onclick="orderProduct()"/></td></tr>
+
+</form>
+</body>
+</html>

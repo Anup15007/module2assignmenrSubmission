@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Using External Script file in HTML Document</title>
+
+		<script src="HelloWorld.js">
+		</script>
+
+	</head>
+
+	<body>
+		<hr>
+		<p>The actual script is in external script file called "HelloWorld.js"</p>
+
+
+		<script type="text/javascript">
+			document.write("<p>This text is displayed by Calling external function:<b> " +  sayHello() + "</b></p>");
+		</script>
+
+		<hr>
+	</body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+	<head>
+	<script type="text/javascript" src="validate.js"></script>
+	</head>
+	<body>
+		<h1>Enter Loan Information:</h1><br>
+		<form id="form1" name="form1" action="#">
+			<table >
+				<tr align="left">
+					<th>1) Amount of the loan (any currency): </th>
+					<td>
+						<input type="number" id="loan" max="1500000" required/>
+					</td>
+				</tr>
+				
+				<tr align="left">
+					<th>2) Annual percentage rate of interest: </th>
+					<td>
+						<input type="number" id="roi" required/>
+					</td>
+				</tr>
+				
+				<tr align="left">
+					<th>3) Repayment period in years: </th>
+					<td>
+						<input type="number" id="period" min="7" max="15" required/>
+					</td>
+				</tr>
+				
+				<tr>
+					<td colspan="2"><input type="submit" value="Compute" onclick="calc()"/></td>
+				</tr>
+				
+				<tr><td align="left" colspan="2"><h1>Payment Information:<h1></td></tr>
+				
+				<tr align="left">
+					<th>4) Your monthly payment will be: </th>
+					<td>
+						<input type="text" id="monthlyPayment" readonly="readonly" />
+					</td>
+				</tr>
+				
+				<tr align="left">
+					<th>5) Your total payment will be: </th>
+					<td>
+						<input type="text" id="totalPayment"  readonly="readonly"/>
+					</td>
+				</tr>
+				
+				<tr align="left">
+					<th>6) Your total interest payments will be: </th>
+					<td>
+						<input type="text" id="totalInterestPayments"  readonly="readonly"/>
+					</td>
+				</tr>
+				
+				
+			</table>
+		</form>
+	</body>
+</html>

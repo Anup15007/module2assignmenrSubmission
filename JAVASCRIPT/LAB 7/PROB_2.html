@@ -1,0 +1,54 @@
+<html>
+	<head>
+	<script type="text/javascript" src="validate2.js"></script>
+	</head>
+	<body align="center" bgcolor="33A8FF">
+		<h1 style="color:white; ">Products Details</h1>
+		<table align="center" style="border:10px solid white">
+			<tr>
+			<th style="border:none">Category:</th>
+			<td><select name="category" id="category" onchange="change_func()">
+				<option value="Electronics">Electronics</option>
+				<option value="Grocery">Grocery</option>
+			</select></td>
+			</tr>
+			<tr>
+			<th>Product:</th>
+			<td>
+			<select id="xyz">
+			<option selected>------</option></select>
+			<select name="product1" id="product1" style="display:none">
+				<option value="20000" selected>Television</option>
+				<option value="30000">Laptop</option>
+				<option value="10000">Phone</option>
+			</select>
+			
+			<select name="product2" id="product2" style="display:none">
+
+				<option value="40" selected>Soap</option>
+				<option value="90">Powder</option>
+			</select>
+			<td>
+			</tr>
+			<tr>
+			<th>Quantity:</th>
+			<td>
+				<input type="number" id="quantity" min="0"/>
+			</td>
+			</tr>
+			<tr>
+			<th>Total Price:</th>
+			<td>
+				<input type="text" id="price" readonly="readonly"/>
+			</td>
+			</tr>
+			<tr>
+			<td><input type="submit" value="Submit" onclick="calc()"/></td>
+			<td>
+				<input type="reset" value="Clear" />
+			</td>
+			</tr>
+			
+		</table>
+	</body>
+</html>
