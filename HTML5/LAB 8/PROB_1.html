@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Methods</title>
+</head>
+<body style="background-color:skyblue">
+ <table border="1" >
+    <caption><b>Product Table</b></caption>
+    <colgroup>
+	<col>
+    </colgroup>
+    <colgroup>
+    <col align="center">
+    <col>
+    </colgroup>
+    <thead>
+<tr>
+<td> Name: <font color="red">*</font></td>
+<td>
+<input type="text" name="name" SIZE="20" tabindex="2" maxlength="15"> <br> <br>
+</td>
+</tr>
+<tr>
+<td>Password:<font color="red">*</font></td>
+<td>
+<input type="password"name="USERNAME" size="10" value="abc" tabindex="9">
+<input type="hidden" name="coname" value="PCS"> 
+<br>
+</td>
+</tr>
+<tr>
+<td>Phone number:<font color="red">*</font></td>
+<td>
+<input type="number" name="phone" maxlength="10"> <br>
+</td>
+</tr>
+<tr>
+<td>Gender<font color="red">*</font></td>
+<td>
+<input  type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female<br>
+</td>
+</tr>
+<tr>
+<td>Date of Birth:<font color="red">*</font></td>
+<input type="date" id="dd/mm/yyyy">
+</tr>
+<tr>
+<tr>
+<td> Email:<font color="red">*</font></td>
+<td>
+<input type="text" name="mail" SIZE="20" tabindex="2" maxlength="30"> <br>
+</td>
+</tr>
+<tr>
+<td>Highest Qualification:<font color="red">*</font></td>
+<td>
+<select name="Select Highest Qualification">
+<option value="select">Select Highest Qualification</option>
+<option value="B.Tech.">B.Tech </option>
+<option value="M.Tech">M.Tech</option>
+<option value="MBA">MBA</option>
+<option value="MCA">MCA </option>
+<option value="Msc">MSc</option>
+<option value="MA">MA</option>
+</td>
+</tr>
+<td>Courses Interested in:<font color="red">*</font></td>
+<td>
+<input type="checkbox" name="Java"> Java
+<input type="checkbox" name="HTML 5"> HTML 5
+<input type="checkbox" name="CSS 3">CSS 3
+<input type="checkbox" name="Angular JS">Angular JS
+<input type="checkbox" name="J Query">J Query<br><br>
+</td>
+</tr>
+
+<td>Comments: (Mention External Certificate if any)</td>
+<td>
+<textarea id="addr" rows="3" cols="33" maxlength="200" wrap="hard"></textarea>
+</td>
+</tr>
+<tr>
+<td>Upload Degree/External Certificates:<font color="red">*</font></td>
+<td> <input type="file" name="pic" accept="image/*"></td>
+</tr>
+<tr>
+<td>      </td>
+ <td><input type="submit" value="Submit information">&nbsp<input type="Reset" value="Clear"> </td>
+ </tr>
+</p>
+</form>
+</body>
+ </html>
+
