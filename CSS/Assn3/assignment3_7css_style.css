@@ -1,0 +1,11 @@
+[title~="title-1"] {
+  border: 5px solid yellow;
+}
+
+img[title]{ 
+border: 1px solid #000; 
+}
+
+img[width]{ 
+border: 1px solid #000; 
+}
